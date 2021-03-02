@@ -1,0 +1,175 @@
+body {
+	font-family: Arial, sans-serif;
+	height: 100%;
+	margin: 0;
+
+}
+
+header {
+	top: 0;
+	margin: 0;
+	height: 120px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	position: fixed;
+	z-index: 5;
+}
+
+h1 {
+	background-color: #fff;
+	height: 50px;
+	margin: 0;
+	padding: 30px;
+}
+
+h1, h2, h3 {
+	color: #4e6666;
+}
+
+nav {
+	background-color: #4e6666;
+	height: 120px;
+	width: 100%;
+}
+
+li {
+	list-style-type: none;
+}
+
+.list div {
+	display: inline-block;
+	padding: 50px 20px;
+	font-weight: bold;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#change>a {
+        color: #4e6666;
+        padding: 250px 40px 40px 40px;
+}
+
+#main {
+	padding: 250px 40px 40px 40px;
+
+}
+
+#text {
+	border: solid 5px #d9d9d9;
+	/*border-radius: 10px;*/
+}
+
+#text>p {
+	padding: 20px;
+}
+
+#events {
+	padding: 250px 40px 40px 40px;
+	color: #4e6666;
+	
+}
+
+#events > a {
+    color: #4e6666;
+}
+
+/*#events > div {
+	margin: 30px 0;
+	border: solid 5px #8ca2a3;
+	border-radius: 10px;
+	background-color: #d9d9d9;
+	font-weight: bold;
+	height: 40px;
+	padding-top: 50px;
+	padding-bottom: 30px;
+	text-align: center;
+
+}*/
+
+#myTable {
+	padding: 40px 40px 40px 40px;
+	color: #4e6666;
+	
+}
+
+#myTable > tbody, thead {
+	margin: 30px 0;
+	border: solid 5px #8ca2a3;
+	/*border-radius: 10px;*/
+	background-color: #d9d9d9;
+	font-weight: bold;
+	height: 40px;
+	padding-top: 50px;
+	padding-bottom: 30px;
+	text-align: center;
+
+}
+
+#contact {
+	padding: 250px 40px 40px 40px;
+}
+
+#form_registration {
+	padding: 250px 40px 40px 40px;
+}
+
+#form_registration>h2 {
+	padding-left: 0;
+}
+
+#login {
+	padding: 250px 40px 40px 40px;
+}
+
+#login>h2 {
+	padding-left: 0;
+}
+
+#admin_registration {
+	padding: 250px 40px 40px 40px;
+}
+
+#admin_registration>h2 {
+	padding-left: 0;
+}
+
+#change {
+	padding: 250px 40px 40px 40px;
+}
+
+#change>h2 {
+	padding-left: 0;
+}
+
+#event_input {
+    padding: 250px 40px 40px 40px;
+}
+
+#event_input>h2 {
+    padding-left: 0;
+}
+
+#error {
+    padding: 250px 40px 40px 40px;
+}
+
+#error>h2 {
+    padding-left: 0;
+}
+
+footer {
+	 
+    bottom: 0px;
+	background-color: #d9d9d9;
+	height: 120px;
+	width: 100%;
+}
+
+address {
+	padding-left: 40px;
+	padding-top: 20px;
+}
