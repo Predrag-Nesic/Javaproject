@@ -86,8 +86,16 @@
                 <input type="text" name="balcony_tickets" placeholder="Balcony tickets"><br>
                 <input type="submit" value="Submit"><br><br><hr>
             </form>
-            
+            <!--            <h2>Erase reservation</h2>
+                        <form action="remove3" method="post">
+                            <input type="number" name="reservation_id" placeholder="Reservation ID"><br>
+                            <input type="submit" value="Submit"><br><br><hr>
+                        </form>-->
+            <hr>
+            <a href="reservations">List of user's reservations</a>
+            <hr>
             <a href="change_user_data.jsp">Change user data</a>
+
         </div>
                     
                     
