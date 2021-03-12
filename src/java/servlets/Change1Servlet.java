@@ -42,9 +42,15 @@ public class Change1Servlet extends HttpServlet {
                 String address = "events_logged_in.jsp";
                 RequestDispatcher rd = request.getRequestDispatcher(address);
                 rd.forward(request, response);
-                break;
+                
             }
         }
+        
+        String message = "Wrong username";
+        session.setAttribute("message", message);
+        String address = "error.jsp";
+        RequestDispatcher rd = request.getRequestDispatcher(address);
+        rd.forward(request, response);
 
 //            String username = request.getParameter("username");
 //            String password = request.getParameter("password");
