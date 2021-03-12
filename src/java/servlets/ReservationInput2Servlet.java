@@ -45,13 +45,16 @@ public class ReservationInput2Servlet extends HttpServlet {
                         e = (Event) e.save();
 
                         reservation = (Reservation) reservation.save();
+//                        ArrayList<Model> reservations = Reservation.all(Reservation.class);//new
+//                        session.setAttribute("reservations", reservations);//new
 //                        response.sendRedirect(address);
                         RequestDispatcher rd = request.getRequestDispatcher(address);
                         rd.forward(request, response);
                     }
                 }
-            } else {
-                String message = "Username or event name is not correct.";
+            }
+        }
+        String message = "Username or event name is not correct.";
                 request.setAttribute("message", message);
                 address = "error.jsp";
 //                String back = "ticket_agent_jsp";
@@ -60,8 +63,6 @@ public class ReservationInput2Servlet extends HttpServlet {
 //                response.sendRedirect(address);
                 RequestDispatcher rd = request.getRequestDispatcher(address);
                 rd.forward(request, response);
-            }
-        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
