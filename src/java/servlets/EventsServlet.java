@@ -32,7 +32,7 @@ public class EventsServlet extends HttpServlet {
             rd.forward(request, response);
         }
         
-// MOZE I OVAKO!!!
+// It can also be done like this...
         
         
 //        ArrayList<Model> users = User.all(User.class);
