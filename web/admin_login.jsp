@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Admin login</title>
+        <title>Employee login</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
@@ -27,13 +27,18 @@
                 <input type="text" name="username" id="username" placeholder="Enter username"><br>
                 <input type="password" name="password" id="password" placeholder="Enter password"><br>
                 <label for="is_admin">Admin:</label>
+<!--                 1 is for admin, 0 is for ticket agent-->
                 <input type="text" name="is_admin" id="is_admin" placeholder="Enter '1' or '0'"><br>
+                
+<!--                it can also be done by saying "yes" or "no", but the idea is the same, in javaproject.sql
+                i used 1 and 0, but it can be changed to ensure better user experience-->
+
 <!--                <select name="is_admin" id="is_admin">
 				<option value="yes" selsected>Yes</option>
 				<option value="no">No</option>
                 </select><br>-->
 <!--                <input type="number" name="is_admin" id="is_admin" placeholder="Type 1 for 'yes', 0 for 'no'">-->
-                <input type="submit"value="Submit">
+                <input type="submit" value="Submit">
             </form>
         </div>
         <footer>
