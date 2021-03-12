@@ -63,6 +63,10 @@
                                 <input type="number" name="gfloor_tickets" placeholder="Ground floor">
                                 <input type="number" name="balcony_tickets" placeholder="Balcony">
                                 <input type="submit" value="Reserve">
+<!--                            I have yet to figure out a way to make reservation of tickets possible in
+                                the table, for now it can be done using input forms below the script tag.
+                                If the user tries to do so in the table it will make reservation always for
+                                the last event, because it is the last event that is situated in the session.-->
                             </form>
                         </td>
                     </tr>
@@ -78,15 +82,19 @@
                     });
                 });
             </script>
-            
+
             <h2>Reservation input</h2>
             <form action="reservation_input" method="post">
                 <input type="text" name="event_name" placeholder="Event name"><br>
                 <input type="text" name="gfloor_tickets" placeholder="Ground floor tickets"><br>
                 <input type="text" name="balcony_tickets" placeholder="Balcony tickets"><br>
-                <input type="submit" value="Submit"><br><br><hr>
+                <input type="submit" value="Submit"><br><br>
             </form>
-            <!--            <h2>Erase reservation</h2>
+            <!--            
+                    I've made an additional page reservation_list.jsp to ensure that only the logged in user
+                    can erase his/her respectful reservation
+            
+                        <h2>Erase reservation</h2>
                         <form action="remove3" method="post">
                             <input type="number" name="reservation_id" placeholder="Reservation ID"><br>
                             <input type="submit" value="Submit"><br><br><hr>
@@ -97,31 +105,7 @@
             <a href="change_user_data.jsp">Change user data</a>
 
         </div>
-                    
-                    
-                    
-                    
-        <!--        <div id="events">
-                    <h2>Events</h2>
         
-                    <div>
-        
-
-    </div>
-                <div id="event_one">Event 1</div>
-                <div>Event 2</div>
-                <div>Event 3</div>
-                <div>Event 4</div>
-                <div>Event 5</div>
-                <div>Event 6</div>
-                <div>Event 7</div>
-                <div>Event 8</div>
-                <div>Event 9</div>
-                <div>Event 10</div>
-                <div>Event 11</div>
-                <div>Event 12</div>
-</div>-->
-
         <footer>
             <address>
                 Predrag Nesic, <br>Delovi 12, <br>Belgrade 11231 Rakovica <br>Republic of Serbia
