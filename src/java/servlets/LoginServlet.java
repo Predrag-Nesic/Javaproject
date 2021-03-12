@@ -33,15 +33,8 @@ public class LoginServlet extends HttpServlet {
         String message = "Username or password is not correct.";
         request.setAttribute("message", message);
         String address = "error.jsp";
-//                String back = "ticket_agent_jsp";
-//                request.setAttribute("back", back);
-
-//                response.sendRedirect(address);
         RequestDispatcher rd = request.getRequestDispatcher(address);
         rd.forward(request, response);
-        
-        
-//        response.sendRedirect("login.jsp");
     }
 
     /**
