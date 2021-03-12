@@ -17,16 +17,13 @@ public class EmployeeRegistrationServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         HttpSession session = request.getSession();
         Employee employee = new Employee();
-//        PrintWriter out = response.getWriter();
+        
         employee.setUsername(request.getParameter("username"));
         employee.setPassword(request.getParameter("password"));
         employee.setFirst_name(request.getParameter("first_name"));
         employee.setLast_name(request.getParameter("last_name"));
         employee.setLocation(request.getParameter("location"));
         employee = (Employee)employee.save();
-        
-        
-        
         
         session.setAttribute("employee", employee);
         
