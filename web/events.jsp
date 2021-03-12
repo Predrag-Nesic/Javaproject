@@ -84,6 +84,7 @@
                 });
             </script>
         </div>
+        <!-- all the events can also be displayed using standard divs, instead of the table above-->
         <!--        <div id="events">
                     <h2>Events</h2>
         
