@@ -38,6 +38,7 @@ public class Remove2 extends HttpServlet {
                 if (r.getId() == Integer.parseInt(request.getParameter("reservation_id"))) {
                     long r_gfloor_tickets = r.getGfloor_tickets();
                     long r_balcony_tickets = r.getBalcony_tickets();
+                    //The reason for a new variables is to return the reserved tickets back to free sale...
                     
                     ArrayList<Model> events = Event.all(Event.class);
                     for(Model event : events) {
@@ -47,6 +48,7 @@ public class Remove2 extends HttpServlet {
 //                            long e_balcony_tickets = e.getBalcony_tickets() + r_balcony_tickets;
                             e.setGfloor_tickets(e.getGfloor_tickets() + r_gfloor_tickets);
                             e.setBalcony_tickets(e.getBalcony_tickets() + r_balcony_tickets);
+                            //... like so.
                             e.save();
                         }
                     }
