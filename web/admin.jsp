@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Events</title>
+        <title>Administrator</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
@@ -52,8 +52,8 @@
                 <input type="text" name="location" placeholder="Location"><br>
                 <input type="submit" value="Submit"><br><br>
             </form>
+            <h2>Remove ticket agent</h2>
             <form action="remove" method="post">
-                <h2>Remove ticket agent</h2>
                 <input type="text" name="username" placeholder="Username"><br>
                 <input type="submit" value="Submit"><br>
             </form>
@@ -68,3 +68,4 @@
 
 </body>
 </html>
+
