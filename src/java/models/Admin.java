@@ -9,6 +9,8 @@ package models;
  *
  * @author Predrag
  */
+
+//This is an additional class that I've made but it's never used. I've put the admin inside the employees table in javaproject.sql to ensure that all the employees can log in on the same .jsp page
 public class Admin extends Model {
     protected String table = "admin";
     
