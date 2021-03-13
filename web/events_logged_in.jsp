@@ -86,8 +86,8 @@
             <h2>Reservation input</h2>
             <form action="reservation_input" method="post">
                 <input type="text" name="event_name" placeholder="Event name"><br>
-                <input type="text" name="gfloor_tickets" placeholder="Ground floor tickets"><br>
-                <input type="text" name="balcony_tickets" placeholder="Balcony tickets"><br>
+                <input type="number" name="gfloor_tickets" placeholder="Ground floor tickets"><br>
+                <input type="number" name="balcony_tickets" placeholder="Balcony tickets"><br>
                 <input type="submit" value="Submit"><br><br>
             </form>
             <!--            
@@ -105,7 +105,31 @@
             <a href="change_user_data.jsp">Change user data</a>
 
         </div>
+
+
+
+
+        <!--        <div id="events">
+                    <h2>Events</h2>
         
+                    <div>
+        
+
+    </div>
+                <div id="event_one">Event 1</div>
+                <div>Event 2</div>
+                <div>Event 3</div>
+                <div>Event 4</div>
+                <div>Event 5</div>
+                <div>Event 6</div>
+                <div>Event 7</div>
+                <div>Event 8</div>
+                <div>Event 9</div>
+                <div>Event 10</div>
+                <div>Event 11</div>
+                <div>Event 12</div>
+</div>-->
+
         <footer>
             <address>
                 Predrag Nesic, <br>Delovi 12, <br>Belgrade 11231 Rakovica <br>Republic of Serbia
