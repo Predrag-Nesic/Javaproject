@@ -27,8 +27,8 @@
             <form action="event_input" method="post">
                 <input type="text" name="name" placeholder="Event name"><br>
                 <input type="date" name="date" placeholder="Event date"><br>
-                <input type="text" name="gfloor_tickets" placeholder="Ground floor tickets"><br>
-                <input type="text" name="balcony_tickets" placeholder="Balcony tickets"><br>
+                <input type="number" name="gfloor_tickets" placeholder="Ground floor tickets"><br>
+                <input type="number" name="balcony_tickets" placeholder="Balcony tickets"><br>
                 <input type="submit" value="Submit"><br><br><hr>
             </form>
 
@@ -42,8 +42,8 @@
             <form action="reservation_input2" method="post">
                 <input type="text" name="username" placeholder="Username"><br>
                 <input type="text" name="event_name" placeholder="Event name"><br>
-                <input type="text" name="gfloor_tickets" placeholder="Ground floor tickets"><br>
-                <input type="text" name="balcony_tickets" placeholder="Balcony tickets"><br>
+                <input type="number" name="gfloor_tickets" placeholder="Ground floor tickets"><br>
+                <input type="number" name="balcony_tickets" placeholder="Balcony tickets"><br>
                 <input type="submit" value="Submit"><br><br><hr>
             </form>
             
