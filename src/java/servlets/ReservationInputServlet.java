@@ -45,7 +45,14 @@ public class ReservationInputServlet extends HttpServlet {
                                 address = "error.jsp";
                                 RequestDispatcher rd = request.getRequestDispatcher(address);
                                 rd.forward(request, response);
+                            } else if(res_gfloor_tickets == 0 && res_balcony_tickets == 0) {
+                                String message = "Please select the number of tickets in order to make a reservation.";
+                                request.setAttribute("message", message);
+                                address = "error.jsp";
+                                RequestDispatcher rd = request.getRequestDispatcher(address);
+                                rd.forward(request, response);
                             }
+                            
                             long e_gfloor_tickets = e.getGfloor_tickets() - res_gfloor_tickets;
                             long e_balcony_tickets = e.getBalcony_tickets() - res_balcony_tickets;
                             e.setGfloor_tickets(e_gfloor_tickets);
@@ -68,6 +75,9 @@ public class ReservationInputServlet extends HttpServlet {
 
             }
         } catch (NumberFormatException ex) {
+            // It is highly unlikely that there will be any kind of exception like this,
+            // but I've put it early on in the code when the input form for number of tickets
+            // was a text type field.
             String message = "The number of tickets must be an integer.";
             request.setAttribute("message", message);
             address = "error.jsp";
