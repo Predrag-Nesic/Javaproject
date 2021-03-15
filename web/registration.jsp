@@ -38,7 +38,7 @@
                        placeholder="Address"><br>
                 <input type="text" name="city"
                        placeholder="City"><br>
-                <input type="text" name="telephone"
+                <input type="number" name="telephone"
                        placeholder="Telephone"><br>
                 <input type="text" name="email"
                        placeholder="Email"><br>
