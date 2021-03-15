@@ -15,7 +15,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Events</title>
+        <title>Reservations</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" type="text/css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
