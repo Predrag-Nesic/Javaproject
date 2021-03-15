@@ -45,6 +45,12 @@ public class ReservationInput2Servlet extends HttpServlet {
                                 address = "error.jsp";
                                 RequestDispatcher rd = request.getRequestDispatcher(address);
                                 rd.forward(request, response);
+                            } else if(res_gfloor_tickets == 0 && res_balcony_tickets == 0) {
+                                String message = "Please select the number of tickets in order to make a reservation.";
+                                request.setAttribute("message", message);
+                                address = "error.jsp";
+                                RequestDispatcher rd = request.getRequestDispatcher(address);
+                                rd.forward(request, response);
                             }
                             
                             long e_gfloor_tickets = e.getGfloor_tickets() - res_gfloor_tickets;
@@ -75,6 +81,33 @@ public class ReservationInput2Servlet extends HttpServlet {
             RequestDispatcher rd = request.getRequestDispatcher(address);
             rd.forward(request, response);
         }
+        
+//        if (request.getParameter("gfloor_tickets").equals(null)) {
+//                                long i = 0;
+//                                reservation.setGfloor_tickets(i);
+//                            } else if (Long.parseLong(request.getParameter("gfloor_tickets")) > 0) {
+//                                reservation.setGfloor_tickets(Long.parseLong(request.getParameter("gfloor_tickets")));
+//                            } else {
+//                                String message = "The number of reserved tickets must be a number";
+//                                address = "error.jsp";
+//                                RequestDispatcher rd = request.getRequestDispatcher(address);
+//                                rd.forward(request, response);
+//                            }
+//
+//                            long res_gfloor_tickets = reservation.getGfloor_tickets(); //new
+//
+//                            if (request.getParameter("balcony_tickets").equals(null)) {
+//                                long i = 0;
+//                                reservation.setBalcony_tickets(i);
+//                            } else if (Long.parseLong(request.getParameter("balcony_tickets")) > 0) {
+//                                reservation.setBalcony_tickets(Long.parseLong(request.getParameter("balcony_tickets")));
+//                            } else {
+//                                String message = "The number of reserved tickets must be a positive integer.";
+//                                request.setAttribute("message", message);   
+//                                address = "error.jsp";
+//                                RequestDispatcher rd = request.getRequestDispatcher(address);
+//                                rd.forward(request, response);
+//                            }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
