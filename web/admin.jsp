@@ -31,7 +31,7 @@
                 <input type="text" name="last_name" placeholder="Last name"><br>        
                 <input type="text" name="address" placeholder="Address"><br>
                 <input type="text" name="city" placeholder="City"><br>
-                <input type="text" name="telephone" placeholder="Telephone"><br>
+                <input type="number" name="telephone" placeholder="Telephone"><br>
                 <input type="text" name="email" placeholder="Email"><br>
                 <input type="submit" value="Submit"><br><br>
             </form>
