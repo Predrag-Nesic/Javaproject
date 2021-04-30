@@ -29,7 +29,7 @@
                 <input type="password" name="password" 
                        placeholder="Password"><br>
                 <input type="password" name="password_repeat" 
-                       placeholder="Ponovi password"><br>
+                       placeholder="Password repeat"><br>
                 <input type="text" name="first_name"
                        placeholder="First name"><br>
                 <input type="text" name="last_name"
